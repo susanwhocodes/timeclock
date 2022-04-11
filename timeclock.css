@@ -1,0 +1,39 @@
+/* timeclock css */
+
+* {
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+.inactive {
+	display:  none;
+}
+
+.error {
+	color: red;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+table tr:hover {
+	background-color: #ddd;
+}
+
+table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #0059A2;
+  color: white;
+}

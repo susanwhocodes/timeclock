@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Time Clock</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="timeclock.js"></script>
+  <link rel="stylesheet" href="timeclock.css">
+</head>
+<body>
+
+<h1>Time Clock</h1>
+<p id='user_display'></p>
+
+<div id="content">
+  <div id="signin" class="inactive">
+    <form id="signin_form" action="" onsubmit="tc.login(event);">
+      <div id="signin_error" class="error"></div>
+      <label for="signin_user">User ID:</label><input type="text" id="signin_user">
+      <input type="submit" id="user_submit">
+    </form>
+  </div>
+  <div id="user_actions" class="inactive">
+    <input id="action_start_shift" type="button" value="Start Shift" onclick="tc.startShift();">
+    <input id="action_end_shift" type="button" value="End Shift" onclick="tc.endShift();">
+    <input id="action_start_break" type="button" value="Start Break" onclick="tc.start('break');">
+    <input id="action_end_break" type="button" value="End Break" onclick="tc.end('break');">
+    <input id="action_start_lunch" type="button" value="Start Lunch" onclick="tc.start('lunch');">
+    <input id="action_end_lunch" type="button" value="End Lunch" onclick="tc.end('lunch');">
+    <p>
+      <input type="button" value="End User Session" onclick="tc.endSession();">
+      <input id="clear_all" type="button" value="Clear All User History" onclick="tc.storage.clear();tc.updateUserDisplay();">
+    </p>
+  </div>
+  <div id="history_container" class="inactive">
+    <h3>User Shift History</h3>
+    <div id="history"></div>
+  </div>
+</div>
+
+</body>
+</html>
