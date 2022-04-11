@@ -1,4 +1,4 @@
-#Simple Time Clock Application
+# Simple Time Clock Application
 
 
 This project is meant to be a small code sample easily run and shared. As such, I wanted a lightweight solution that could run with minimal setup and installations. I chose to implement this program primarily with JavaScript and jQuery. Rather than using a database, I use the browser's localStorage and sessionStorage. Due to these design choices, there are various limitations, including that data cannot be shared across browsers and it is not scaleable for large data or ready for professional use.
@@ -33,6 +33,6 @@ To use this application locally, download the files and open index.html in a bro
 
 Valid users have been set up with the following sign in ids:
 
-manager
-employee1
-employee2
+* manager
+* employee1
+* employee2
